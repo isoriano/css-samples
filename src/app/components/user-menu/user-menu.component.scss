@@ -1,0 +1,157 @@
+.ui {
+  &.btn {
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &.normal {
+      padding: 4% 6%;
+      background: rgb(28, 51, 63);
+      border-radius: 20px;
+      color: #fff;
+      font-size: 12.5px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        background: rgba(28, 51, 63, 0.7);
+      }
+    }
+  }
+}
+
+.user-ui {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: inline-block;
+  .user-menu-toggle {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    .profile-img {
+      width: 45px;
+      height: 45px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      background-image: url("/assets/images/user-face/face-1.png");
+      background-size: cover;
+    }
+
+    .simple-arrow {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+
+  .user-menu {
+    width: 300px;
+    background: #6f92a4;
+    position: absolute;
+    top: 56px;
+    right: 43px;
+    border: 1px solid #c6dae4;
+    border-radius: 10px 0 10px 10px;
+    &:after {
+      content: "";
+      display: block;
+      right: 0;
+      height: 0;
+      top: -10px;
+      width: 0;
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #6f92a4;
+    }
+    &:before {
+      content: "";
+      display: block;
+      right: -1px;
+      height: 0;
+      top: -11px;
+      width: 0;
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #c6dae4;
+    }
+    .user-info {
+      border-bottom: 1px solid #c6dae4;
+      padding: 5px 10px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .user-info-name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .profile-img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background-image: url("/assets/images/user-face/face-1.png");
+          background-size: cover;
+        }
+        h3 {
+          margin: 0;
+          color: #fff;
+          font-weight: bold;
+          line-height: normal;
+          font-size: 15px;
+          padding-left: 10px;
+        }
+      }
+    }
+    .races-info {
+      padding: 10px;
+      height: 110px;
+      display: block;
+      text-align: left;
+      .next-race-bar {
+        height: 20px;
+        background-color: #c6dae4;
+        border: 1px solid #c6dae4;
+        border-radius: 20px;
+        position: relative;
+        .progress {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 20px 0 0 20px;
+          background-color: rgba(28, 51, 63, 0.7);
+          height: 100%;
+        }
+      }
+      span {
+        margin: 0;
+        padding: 5px 0;
+        color: #fff;
+        font-size: 12.5px;
+        line-height: normal !important;
+        display: block;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: normal;
+        color: #fff;
+        float: left;
+        margin: 18px 0;
+      }
+
+      .btn {
+        float: right;
+        font-size: 12px;
+        margin: 5px 0;
+      }
+    }
+  }
+}

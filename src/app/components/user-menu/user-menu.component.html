@@ -1,0 +1,27 @@
+<div class="user-ui">
+  <div class="user-menu-toggle" (click)="switchOpen()">
+    <div class="profile-img"></div>
+    <span *ngIf="!open" class="simple-arrow material-icons">keyboard_arrow_down</span>
+    <span *ngIf="open" class="simple-arrow material-icons">keyboard_arrow_up</span>
+  </div>
+
+  <div *ngIf="open" class="user-menu">
+    <div class="user-info">
+      <div class="user-info-name">
+        <div class="profile-img"></div>
+        <h3 class="name">Ivan Soriano</h3>
+      </div>
+      <div class="ui btn normal">Perfil</div>
+    </div>
+
+    <div class="races-info">
+      <span>Next race in <i>25 days</i></span>
+      <div class="next-race-bar">
+        <div class="progress" style="width: 65%;"></div>
+      </div>
+
+      <p>2 availabe races</p>
+      <div class="ui btn normal">Subscribe</div>
+    </div>
+  </div>
+</div>

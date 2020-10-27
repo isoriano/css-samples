@@ -1,0 +1,12 @@
+<h2>Friends Scroller</h2>
+<section class="overflow-x">
+  <div class="friends-list">
+    <figure *ngFor="let friend of friends">
+      <picture>
+        <img [src]="friend.imgUrl" [alt]="friend.name">
+      </picture>
+      <figcaption>{{friend.name}}</figcaption>
+    </figure>
+  </div>
+
+</section>

@@ -1,0 +1,31 @@
+:host {
+  padding: 2rem;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    & > input {
+      flex: 1 1 1ch;
+      margin: .5rem;
+
+      &[type="email"]{
+        flex: 3 1 30ch;
+      }
+    }
+  }
+
+  input, button {
+    border: none;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+  }
+
+  button {
+    flex: 1 1 1ch;
+    margin: .5rem;
+    background: #1c333f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem -.5rem #1c333f;
+  }
+}

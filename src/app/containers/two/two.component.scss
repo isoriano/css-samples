@@ -1,0 +1,7 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  height: calc(100% - 69px - 130px);
+  overflow-y: auto;
+}

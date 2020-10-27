@@ -1,0 +1,135 @@
+<nav class="navbar" (mouseenter) ="switchHover(true)" (mouseleave) ="switchHover(false)">
+  <ul class="navbar-nav">
+    <li class="logo">
+      <a href="2" class="nav-link">
+        <span class="link-text">Sample</span>
+        <i *ngIf="!hover" class="material-icons">menu</i>
+        <i *ngIf="hover" class="material-icons">menu_open</i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="material-icons">dashboard</i>
+        <span class="link-text">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="material-icons">person</i>
+        <span class="link-text">Profile</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="material-icons">devices</i>
+        <span class="link-text">devices</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="material-icons">lock</i>
+        <span class="link-text">Privacy</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="material-icons">settings</i>
+        <span class="link-text">Settings</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<main [class.squeeze]="squeezeMain">
+  <h1>Responsive side to bottom nav bar!</h1>
+  <h2>Switch between max screen and mobile screens to see the menu style change</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor ligula lectus, quis commodo justo placerat
+    fringilla. Duis leo augue, volutpat quis dui eu, ullamcorper lacinia nisl. Fusce dapibus id lectus ac rhoncus. Nunc
+    sed purus dui. Integer non risus vel tellus rutrum condimentum. Quisque maximus auctor augue vel auctor. Curabitur
+    nec lectus ipsum. Etiam elementum cursus eros, quis pharetra nulla cursus eget. Proin auctor, velit vel gravida
+    lacinia, nisl ex porttitor urna, sit amet tristique diam mauris sit amet sapien.
+
+    Pellentesque tempor egestas justo, a placerat nibh interdum in. Phasellus risus mi, luctus sit amet ligula lacinia,
+    scelerisque faucibus leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ex leo,
+    mollis et lacinia ornare, rhoncus sit amet ex. Nam vehicula elit eget arcu fringilla ultricies. In lobortis lacus
+    interdum, rhoncus ipsum ac, aliquet lorem. Morbi aliquam pulvinar justo, a dignissim elit efficitur ac. Nulla
+    facilisi. Nam eget diam sit amet tellus consectetur sagittis.
+
+    Phasellus tincidunt tincidunt libero, eget rutrum odio varius ac. Proin eget nisl sit amet urna aliquam dignissim.
+    Pellentesque lobortis molestie semper. Maecenas sed odio elit. Pellentesque euismod sed est sit amet dignissim. Nunc
+    convallis tortor et leo dictum, eu suscipit mi viverra. Donec et orci sed leo malesuada dictum id vitae magna. Proin
+    suscipit eleifend consequat. Donec blandit volutpat ipsum, sit amet fermentum nisl dictum sit amet. In mattis ipsum
+    vel iaculis pharetra. Sed ut dignissim eros, gravida commodo velit. In accumsan tincidunt lectus gravida blandit.
+    Suspendisse ipsum nunc, blandit a magna nec, vestibulum molestie erat. Duis eu elit nulla. Fusce aliquam turpis
+    purus, non molestie tortor sagittis nec.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor ligula lectus, quis commodo justo placerat
+    fringilla. Duis leo augue, volutpat quis dui eu, ullamcorper lacinia nisl. Fusce dapibus id lectus ac rhoncus. Nunc
+    sed purus dui. Integer non risus vel tellus rutrum condimentum. Quisque maximus auctor augue vel auctor. Curabitur
+    nec lectus ipsum. Etiam elementum cursus eros, quis pharetra nulla cursus eget. Proin auctor, velit vel gravida
+    lacinia, nisl ex porttitor urna, sit amet tristique diam mauris sit amet sapien.
+
+    Pellentesque tempor egestas justo, a placerat nibh interdum in. Phasellus risus mi, luctus sit amet ligula lacinia,
+    scelerisque faucibus leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ex leo,
+    mollis et lacinia ornare, rhoncus sit amet ex. Nam vehicula elit eget arcu fringilla ultricies. In lobortis lacus
+    interdum, rhoncus ipsum ac, aliquet lorem. Morbi aliquam pulvinar justo, a dignissim elit efficitur ac. Nulla
+    facilisi. Nam eget diam sit amet tellus consectetur sagittis.
+
+    Phasellus tincidunt tincidunt libero, eget rutrum odio varius ac. Proin eget nisl sit amet urna aliquam dignissim.
+    Pellentesque lobortis molestie semper. Maecenas sed odio elit. Pellentesque euismod sed est sit amet dignissim. Nunc
+    convallis tortor et leo dictum, eu suscipit mi viverra. Donec et orci sed leo malesuada dictum id vitae magna. Proin
+    suscipit eleifend consequat. Donec blandit volutpat ipsum, sit amet fermentum nisl dictum sit amet. In mattis ipsum
+    vel iaculis pharetra. Sed ut dignissim eros, gravida commodo velit. In accumsan tincidunt lectus gravida blandit.
+    Suspendisse ipsum nunc, blandit a magna nec, vestibulum molestie erat. Duis eu elit nulla. Fusce aliquam turpis
+    purus, non molestie tortor sagittis nec.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor ligula lectus, quis commodo justo placerat
+    fringilla. Duis leo augue, volutpat quis dui eu, ullamcorper lacinia nisl. Fusce dapibus id lectus ac rhoncus. Nunc
+    sed purus dui. Integer non risus vel tellus rutrum condimentum. Quisque maximus auctor augue vel auctor. Curabitur
+    nec lectus ipsum. Etiam elementum cursus eros, quis pharetra nulla cursus eget. Proin auctor, velit vel gravida
+    lacinia, nisl ex porttitor urna, sit amet tristique diam mauris sit amet sapien.
+
+    Pellentesque tempor egestas justo, a placerat nibh interdum in. Phasellus risus mi, luctus sit amet ligula lacinia,
+    scelerisque faucibus leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ex leo,
+    mollis et lacinia ornare, rhoncus sit amet ex. Nam vehicula elit eget arcu fringilla ultricies. In lobortis lacus
+    interdum, rhoncus ipsum ac, aliquet lorem. Morbi aliquam pulvinar justo, a dignissim elit efficitur ac. Nulla
+    facilisi. Nam eget diam sit amet tellus consectetur sagittis.
+
+    Phasellus tincidunt tincidunt libero, eget rutrum odio varius ac. Proin eget nisl sit amet urna aliquam dignissim.
+    Pellentesque lobortis molestie semper. Maecenas sed odio elit. Pellentesque euismod sed est sit amet dignissim. Nunc
+    convallis tortor et leo dictum, eu suscipit mi viverra. Donec et orci sed leo malesuada dictum id vitae magna. Proin
+    suscipit eleifend consequat. Donec blandit volutpat ipsum, sit amet fermentum nisl dictum sit amet. In mattis ipsum
+    vel iaculis pharetra. Sed ut dignissim eros, gravida commodo velit. In accumsan tincidunt lectus gravida blandit.
+    Suspendisse ipsum nunc, blandit a magna nec, vestibulum molestie erat. Duis eu elit nulla. Fusce aliquam turpis
+    purus, non molestie tortor sagittis nec.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porttitor ligula lectus, quis commodo justo placerat
+    fringilla. Duis leo augue, volutpat quis dui eu, ullamcorper lacinia nisl. Fusce dapibus id lectus ac rhoncus. Nunc
+    sed purus dui. Integer non risus vel tellus rutrum condimentum. Quisque maximus auctor augue vel auctor. Curabitur
+    nec lectus ipsum. Etiam elementum cursus eros, quis pharetra nulla cursus eget. Proin auctor, velit vel gravida
+    lacinia, nisl ex porttitor urna, sit amet tristique diam mauris sit amet sapien.
+
+    Pellentesque tempor egestas justo, a placerat nibh interdum in. Phasellus risus mi, luctus sit amet ligula lacinia,
+    scelerisque faucibus leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+    egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur ex leo,
+    mollis et lacinia ornare, rhoncus sit amet ex. Nam vehicula elit eget arcu fringilla ultricies. In lobortis lacus
+    interdum, rhoncus ipsum ac, aliquet lorem. Morbi aliquam pulvinar justo, a dignissim elit efficitur ac. Nulla
+    facilisi. Nam eget diam sit amet tellus consectetur sagittis.
+
+    Phasellus tincidunt tincidunt libero, eget rutrum odio varius ac. Proin eget nisl sit amet urna aliquam dignissim.
+    Pellentesque lobortis molestie semper. Maecenas sed odio elit. Pellentesque euismod sed est sit amet dignissim. Nunc
+    convallis tortor et leo dictum, eu suscipit mi viverra. Donec et orci sed leo malesuada dictum id vitae magna. Proin
+    suscipit eleifend consequat. Donec blandit volutpat ipsum, sit amet fermentum nisl dictum sit amet. In mattis ipsum
+    vel iaculis pharetra. Sed ut dignissim eros, gravida commodo velit. In accumsan tincidunt lectus gravida blandit.
+    Suspendisse ipsum nunc, blandit a magna nec, vestibulum molestie erat. Duis eu elit nulla. Fusce aliquam turpis
+    purus, non molestie tortor sagittis nec.
+  </p>
+</main>
