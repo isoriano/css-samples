@@ -1,0 +1,39 @@
+<div class="timer" [class.finished]="finished">
+  <header>
+    <h1>Timer</h1>
+    <span class="material-icons">more_vert</span>
+  </header>
+  <time>
+    <span (click)="focused('h')" [class.focused]="editable == 'h'">{{hours}}<small>h</small></span>
+    <span (click)="focused('m')" [class.focused]="editable == 'm'">{{minutes}}<small>m</small></span>
+    <span (click)="focused('s')" [class.focused]="editable == 's'">{{seconds}}<small>s</small></span>
+    <span (click)="clear()" class="material-icons">backspace</span>
+  </time>
+  <hr>
+  <div class="keypad">
+    <span (click)="setTimer(1)">1</span>
+    <span (click)="setTimer(2)">2</span>
+    <span (click)="setTimer(3)">3</span>
+    <span (click)="setTimer(4)">4</span>
+    <span (click)="setTimer(5)">5</span>
+    <span (click)="setTimer(6)">6</span>
+    <span (click)="setTimer(7)">7</span>
+    <span (click)="setTimer(8)">8</span>
+    <span (click)="setTimer(9)">9</span>
+    <span (click)="setTimer(0)">0</span>
+  </div>
+  <footer>
+    <div *ngIf="!running; else runningOptions" class="fab" (click)="play()">
+      <i class="material-icons">play_arrow</i>
+    </div>
+    <ng-template #runningOptions>
+      <div class="fab" (click)="stop()">
+        <i class="material-icons">stop</i>
+      </div>
+      <div class="fab" (click)="pause()">
+        <i class="material-icons">pause</i>
+      </div>
+    </ng-template>
+  </footer>
+</div>
+<!-- <footer></footer> -->

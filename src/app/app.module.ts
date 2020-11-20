@@ -8,8 +8,10 @@ import { TwoComponent } from './containers/two/two.component';
 import { FriendsScrollerComponent } from './components/friends-scroller/friends-scroller.component';
 import { ResponsiveFormComponent } from './components/responsive-form/responsive-form.component';
 import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
-import { ResponsiveLeftToBottomBavComponent } from './components/responsive-left-to-bottom-bav/responsive-left-to-bottom-bav.component';
+import { ResponsiveLeftToBottomNavComponent } from './components/responsive-left-to-bottom-nav/responsive-left-to-bottom-nav.component';
 import { UserMenuComponent } from './components/user-menu/user-menu.component';
+import { TimerComponent } from './components/timer/timer.component';
+import { ThreeComponent } from './containers/three/three.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import { UserMenuComponent } from './components/user-menu/user-menu.component';
     FriendsScrollerComponent,
     ResponsiveFormComponent,
     BottomNavComponent,
-    ResponsiveLeftToBottomBavComponent,
-    UserMenuComponent
+    ResponsiveLeftToBottomNavComponent,
+    UserMenuComponent,
+    TimerComponent,
+    ThreeComponent
   ],
   imports: [
     BrowserModule,
